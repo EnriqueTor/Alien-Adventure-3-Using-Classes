@@ -30,13 +30,12 @@ class SpecialBadge: Badge {
         switch animate {
             
         case .growAndShrink:
-            growAndShrink()
+            return growAndShrink()
         case .rotate:
-            rotate()
+            return rotate()
         case .shake:
-            shake()
+            return shake()
         }
-        return nil
     }
     
     func pickBadgeAction() {
